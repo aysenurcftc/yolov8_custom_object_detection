@@ -5,7 +5,7 @@ from settings import DETECTION_MODEL
 
 
 def main():
-    parser = argparse.ArgumentParser(description="detection")
+    parser = argparse.ArgumentParser(description="yolov8 custom object detection")
     parser.add_argument("input_path", help="path to input image.")
     args = parser.parse_args()
 
