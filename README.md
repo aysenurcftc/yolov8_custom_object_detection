@@ -1,8 +1,7 @@
 
-# Project Title
+# Yolov8-Custom-Object-Detetction
 
-A brief description of what this project does and who it's for
-
+This repo detects panda with YOLOv8 from ultralytics
 
 ## Usage/Examples
 
@@ -35,9 +34,8 @@ pip install -r requirements.txt
 
 To run this project, you will need to add the following environment variables to your .env file
 
-`API_KEY`
+`IMG_API_KEY`
 
-`ANOTHER_API_KEY`
 
 
 ## License
