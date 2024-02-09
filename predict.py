@@ -28,11 +28,11 @@ class PandaDetectionModel:
     def showResult(self, input_path):
         # from PIL
         im1 = Image.open(input_path)
-        results = model.predict(source=im1, save=True)  # save plotted images
+        results = model.predict(source=im1, save=True)  # save plotted 
         return results
 
 
 modelDetection = PandaDetectionModel()
 model = modelDetection.load_model(DETECTION_MODEL)
 results = modelDetection.showResult("./test_images/panda4.jpg")
-# results = model("./test_images/panda2.jpg") # predict on an image
+results = model("./test_images/panda2.jpg")  # predict on an image

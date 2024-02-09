@@ -163,4 +163,5 @@ cython_debug/
 runs/
 test_images/
 data/
+api_images/
 
