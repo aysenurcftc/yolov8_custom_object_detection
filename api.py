@@ -3,12 +3,12 @@ import uuid
 
 from fastapi import FastAPI, File, UploadFile
 
-from predict import PandaDetectionModel
+from predict import HumanFaceDetectionModel
 from settings import DETECTION_MODEL
 from upload import upload_image_to_imgbb
 
 app = FastAPI()
-model = PandaDetectionModel()
+model = HumanFaceDetectionModel()
 temp = "api_images"
 os.makedirs(temp, exist_ok=True)
 

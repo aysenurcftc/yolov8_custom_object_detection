@@ -1,6 +1,6 @@
 import argparse
 
-from predict import PandaDetectionModel
+from predict import HumanFaceDetectionModel
 from settings import DETECTION_MODEL
 
 
@@ -9,8 +9,9 @@ def main():
     parser.add_argument("input_path", help="path to input image.")
     args = parser.parse_args()
 
-    model = PandaDetectionModel()
+    model = HumanFaceDetectionModel()
     result = model.load_model(DETECTION_MODEL)
+    
     result = model.showResult(args.input_path)
 
 

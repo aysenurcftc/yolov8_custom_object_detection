@@ -4,7 +4,7 @@ from ultralytics import YOLO
 from settings import *
 
 
-class PandaDetectionModel:
+class HumanFaceDetectionModel:
     def __init__(self) -> None:
         self.model_path = self.load_model(model_path=DETECTION_MODEL)
 
@@ -28,12 +28,16 @@ class PandaDetectionModel:
     def showResult(self, input_path):
         # from PIL
         im1 = Image.open(input_path)
+        model = self.load_model(DETECTION_MODEL)
         results = model.predict(source=im1, save=True, project="runs", exist_ok=True)  # save plotted
         return results
 
 
 
-modelDetection = PandaDetectionModel()
+"""   
+modelDetection = HumanFaceDetectionModel()
 model = modelDetection.load_model(DETECTION_MODEL)
-results = modelDetection.showResult("./test_images/panda5.jpg")
-results = model("./test_images/panda2.jpg")  # predict on an image
+results = modelDetection.showResult("./test_images/bigbang.jpg")
+results = model("./test_images/bigbang.jpg")  # predict on an image
+
+"""
