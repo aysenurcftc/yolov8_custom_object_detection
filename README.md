@@ -1,7 +1,7 @@
 
 # Yolov8-Custom-Object-Detetction
 
-This repo detects panda with YOLOv8 from ultralytics
+This repo detects human face  with YOLOv8 from ultralytics
 
 ## Usage/Examples
 
