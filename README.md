@@ -20,7 +20,7 @@ options:
 ### API Usage
 
 ```
-http://127.0.0.1:8000/predict
+http://127.0.0.1:8041/predict
 ```
 ## Installation
 
@@ -29,13 +29,20 @@ Install project with pip
 ```bash
 pip install -r requirements.txt
 ```
+
+## Deployment
+To deploy this project run
+```bash
+docker build -t yolo_det .
+docker run -d -p 8041:8041 yolo_det
+```
+
     
 ## Environment Variables
 
 To run this project, you will need to add the following environment variables to your .env file
 
 `IMG_API_KEY`
-
 
 
 ## License
